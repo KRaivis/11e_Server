@@ -15,4 +15,4 @@ def health():
   return "Serveris darbojas Uh!"
 
 if __name__ == '__main__':
-  app.run(debug=True,port=5000) # host='0.0.0.0' - datora IP adrese
+  app.run(debug=True,host='10.1.15.87',port=5000) # host='0.0.0.0' - datora IP adrese
