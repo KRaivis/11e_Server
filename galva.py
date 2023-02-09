@@ -10,6 +10,14 @@ app = Flask(__name__)
 def root():
     return render_template("tests.html")
 
+@app.route('/vards')
+def katevisauc():
+  return render_template("katevisauc.html")
+
+@app.route('/sveiciens')
+def uzruna():
+  return render_template("sveiciens.html", skaits="otrais")
+
 @app.route('/tests')
 def health():
   return "Serveris darbojas Uh!"
